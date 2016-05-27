@@ -1,0 +1,9 @@
+includes:
+  - layer:basic
+repo: https://github.com/cmars/layer-relay.git
+options:
+  basic:
+    packages:
+      - 'etcd' 
+ignore:
+ - .*.swp

@@ -1,0 +1,4 @@
+options:
+  etcd:
+    type: string
+    description: etcd connection string, comma-separated list of host:port.
