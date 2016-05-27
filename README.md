@@ -8,7 +8,6 @@ For a given relation type, create a reactive layered charm that includes this
 layer like this:
 
     includes:
-      - layer:basic
       - layer:relay
 
 and annotates the relation endpoints you'd like to relay across models with
@@ -49,6 +48,10 @@ What just happened? Well, we:
 
 The relation data between myapp and nginx are relayed to each other through
 changes in etcd, which is polled by the relay.
+
+The relay charm itself is quite small, just a `layer.yaml` and `metadata.yaml`,
+so it's easy to make one for each logical cross-model relation boundary in your
+multi-model deployment. Just give each one a distinct relay name.
 
 # Requirements
 
