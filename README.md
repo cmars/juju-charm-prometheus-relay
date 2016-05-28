@@ -20,6 +20,8 @@ We can relay any kind of relation, but for this example, we'll relay http. Add
 this layer as shown above, then create a `metadata.yaml`:
 
     name: myapp-relay
+    summary: cross-model relay for myapp
+    description: cross-model relay for myapp
     provides:
       frontend:
         interface: http
