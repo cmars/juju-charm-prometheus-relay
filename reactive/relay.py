@@ -1,7 +1,7 @@
 import json
 import os
 import shutil
-from subprocess import check_call, check_output
+from subprocess import check_call, check_output, CalledProcessError
 
 from charms.reactive import hook, when, when_not, remove_state, set_state
 from charms.reactive.helpers import data_changed
