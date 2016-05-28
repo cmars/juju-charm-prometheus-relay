@@ -1,0 +1,13 @@
+name: mongodb-relay
+summary: cross-model relay for mongodb interface
+description: cross-model relay for mongodb interface
+requires:
+  frontend:
+    interface: mongodb
+    relay: some-db
+provides:
+  backend:
+    interface: mongodb
+    relay: some-db
+series:
+  - xenial
