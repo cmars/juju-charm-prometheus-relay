@@ -1,13 +1,13 @@
-name: mongodb-relay
-summary: cross-model relay for mongodb interface
-description: cross-model relay for mongodb interface
+name: prometheus-relay
+summary: cross-model relay for prometheus interface
+description: cross-model relay for prometheus interface
 requires:
   frontend:
-    interface: mongodb
-    relay: some-db
+    interface: prometheus
+    relay: some-monitoring
 provides:
   backend:
-    interface: mongodb
-    relay: some-db
+    interface: prometheus
+    relay: some-monitoring
 series:
   - xenial
